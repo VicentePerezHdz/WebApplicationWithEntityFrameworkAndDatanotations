@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dimex002Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="imss_preautorizacion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="created" Type="DateTime" Precision="3" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="modified" Type="DateTime" Precision="3" />
+    <Property Name="modified_by" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="txt1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt2" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt3" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt4" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt5" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt6" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt7" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt8" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt9" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt10" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt11" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt12" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt13" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt14" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt15" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt16" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt17" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt18" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt19" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt20" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt21" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt22" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt23" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt24" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt25" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt26" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt27" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt28" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt29" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt30" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="date1" Type="DateTime" Precision="3" />
+    <Property Name="date2" Type="DateTime" Precision="3" />
+    <Property Name="date3" Type="DateTime" Precision="3" />
+    <Property Name="date4" Type="DateTime" Precision="3" />
+    <Property Name="date5" Type="DateTime" Precision="3" />
+    <Property Name="latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="dimex002Entity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="imss_preautorizacion" EntityType="Self.imss_preautorizacion" />
+    <EntitySet Name="sucursales" EntityType="dimex002Model.sucursales" />
+  </EntityContainer>
+  <EntityType Name="sucursales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="created" Type="DateTime" Precision="3" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="modified" Type="DateTime" Precision="3" />
+    <Property Name="modified_by" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="txt1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt2" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt3" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt4" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt5" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt6" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt7" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt8" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt9" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt10" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt11" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt12" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt13" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt14" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt15" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt16" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt17" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt18" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt19" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt20" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt21" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt22" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt23" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt24" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt25" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt26" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt27" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt28" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt29" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt30" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt31" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt32" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt33" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt34" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt35" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt36" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt37" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt38" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt39" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt40" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt41" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt42" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt43" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt44" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt45" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt46" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt47" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt48" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt49" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="txt50" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="date1" Type="DateTime" Precision="3" />
+    <Property Name="date2" Type="DateTime" Precision="3" />
+    <Property Name="date3" Type="DateTime" Precision="3" />
+    <Property Name="date4" Type="DateTime" Precision="3" />
+    <Property Name="date5" Type="DateTime" Precision="3" />
+    <Property Name="image1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="image2" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="image3" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="image4" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="image5" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

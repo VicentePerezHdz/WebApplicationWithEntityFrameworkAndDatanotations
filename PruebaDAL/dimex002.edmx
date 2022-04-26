@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dimex002Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="imss_preautorizacion">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="created" Type="datetime" />
+          <Property Name="created_by" Type="int" />
+          <Property Name="modified" Type="datetime" />
+          <Property Name="modified_by" Type="int" />
+          <Property Name="type" Type="varchar" MaxLength="50" />
+          <Property Name="txt1" Type="varchar" MaxLength="300" />
+          <Property Name="txt2" Type="varchar" MaxLength="300" />
+          <Property Name="txt3" Type="varchar" MaxLength="300" />
+          <Property Name="txt4" Type="varchar" MaxLength="300" />
+          <Property Name="txt5" Type="varchar" MaxLength="300" />
+          <Property Name="txt6" Type="varchar" MaxLength="300" />
+          <Property Name="txt7" Type="varchar" MaxLength="300" />
+          <Property Name="txt8" Type="varchar" MaxLength="300" />
+          <Property Name="txt9" Type="varchar" MaxLength="300" />
+          <Property Name="txt10" Type="varchar" MaxLength="300" />
+          <Property Name="txt11" Type="varchar" MaxLength="300" />
+          <Property Name="txt12" Type="varchar" MaxLength="300" />
+          <Property Name="txt13" Type="varchar" MaxLength="300" />
+          <Property Name="txt14" Type="varchar" MaxLength="300" />
+          <Property Name="txt15" Type="varchar" MaxLength="300" />
+          <Property Name="txt16" Type="varchar" MaxLength="300" />
+          <Property Name="txt17" Type="varchar" MaxLength="300" />
+          <Property Name="txt18" Type="varchar" MaxLength="300" />
+          <Property Name="txt19" Type="varchar" MaxLength="300" />
+          <Property Name="txt20" Type="varchar" MaxLength="300" />
+          <Property Name="txt21" Type="varchar" MaxLength="300" />
+          <Property Name="txt22" Type="varchar" MaxLength="300" />
+          <Property Name="txt23" Type="varchar" MaxLength="300" />
+          <Property Name="txt24" Type="varchar" MaxLength="300" />
+          <Property Name="txt25" Type="varchar" MaxLength="300" />
+          <Property Name="txt26" Type="varchar" MaxLength="300" />
+          <Property Name="txt27" Type="varchar" MaxLength="300" />
+          <Property Name="txt28" Type="varchar" MaxLength="300" />
+          <Property Name="txt29" Type="varchar" MaxLength="300" />
+          <Property Name="txt30" Type="varchar" MaxLength="300" />
+          <Property Name="date1" Type="datetime" />
+          <Property Name="date2" Type="datetime" />
+          <Property Name="date3" Type="datetime" />
+          <Property Name="date4" Type="datetime" />
+          <Property Name="date5" Type="datetime" />
+          <Property Name="latitude" Type="varchar" MaxLength="50" />
+          <Property Name="longitude" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sucursales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="created" Type="datetime" />
+          <Property Name="created_by" Type="int" />
+          <Property Name="modified" Type="datetime" />
+          <Property Name="modified_by" Type="int" />
+          <Property Name="type" Type="varchar" MaxLength="50" />
+          <Property Name="txt1" Type="varchar" MaxLength="300" />
+          <Property Name="txt2" Type="varchar" MaxLength="300" />
+          <Property Name="txt3" Type="varchar" MaxLength="300" />
+          <Property Name="txt4" Type="varchar" MaxLength="300" />
+          <Property Name="txt5" Type="varchar" MaxLength="300" />
+          <Property Name="txt6" Type="varchar" MaxLength="300" />
+          <Property Name="txt7" Type="varchar" MaxLength="300" />
+          <Property Name="txt8" Type="varchar" MaxLength="300" />
+          <Property Name="txt9" Type="varchar" MaxLength="300" />
+          <Property Name="txt10" Type="varchar" MaxLength="300" />
+          <Property Name="txt11" Type="varchar" MaxLength="300" />
+          <Property Name="txt12" Type="varchar" MaxLength="300" />
+          <Property Name="txt13" Type="varchar" MaxLength="300" />
+          <Property Name="txt14" Type="varchar" MaxLength="300" />
+          <Property Name="txt15" Type="varchar" MaxLength="300" />
+          <Property Name="txt16" Type="varchar" MaxLength="300" />
+          <Property Name="txt17" Type="varchar" MaxLength="300" />
+          <Property Name="txt18" Type="varchar" MaxLength="300" />
+          <Property Name="txt19" Type="varchar" MaxLength="300" />
+          <Property Name="txt20" Type="varchar" MaxLength="300" />
+          <Property Name="txt21" Type="varchar" MaxLength="300" />
+          <Property Name="txt22" Type="varchar" MaxLength="300" />
+          <Property Name="txt23" Type="varchar" MaxLength="300" />
+          <Property Name="txt24" Type="varchar" MaxLength="300" />
+          <Property Name="txt25" Type="varchar" MaxLength="300" />
+          <Property Name="txt26" Type="varchar" MaxLength="300" />
+          <Property Name="txt27" Type="varchar" MaxLength="300" />
+          <Property Name="txt28" Type="varchar" MaxLength="300" />
+          <Property Name="txt29" Type="varchar" MaxLength="300" />
+          <Property Name="txt30" Type="varchar" MaxLength="300" />
+          <Property Name="txt31" Type="varchar" MaxLength="300" />
+          <Property Name="txt32" Type="varchar" MaxLength="300" />
+          <Property Name="txt33" Type="varchar" MaxLength="300" />
+          <Property Name="txt34" Type="varchar" MaxLength="300" />
+          <Property Name="txt35" Type="varchar" MaxLength="300" />
+          <Property Name="txt36" Type="varchar" MaxLength="300" />
+          <Property Name="txt37" Type="varchar" MaxLength="300" />
+          <Property Name="txt38" Type="varchar" MaxLength="300" />
+          <Property Name="txt39" Type="varchar" MaxLength="300" />
+          <Property Name="txt40" Type="varchar" MaxLength="300" />
+          <Property Name="txt41" Type="varchar" MaxLength="300" />
+          <Property Name="txt42" Type="varchar" MaxLength="300" />
+          <Property Name="txt43" Type="varchar" MaxLength="300" />
+          <Property Name="txt44" Type="varchar" MaxLength="300" />
+          <Property Name="txt45" Type="varchar" MaxLength="300" />
+          <Property Name="txt46" Type="varchar" MaxLength="300" />
+          <Property Name="txt47" Type="varchar" MaxLength="300" />
+          <Property Name="txt48" Type="varchar" MaxLength="300" />
+          <Property Name="txt49" Type="varchar" MaxLength="300" />
+          <Property Name="txt50" Type="varchar" MaxLength="300" />
+          <Property Name="date1" Type="datetime" />
+          <Property Name="date2" Type="datetime" />
+          <Property Name="date3" Type="datetime" />
+          <Property Name="date4" Type="datetime" />
+          <Property Name="date5" Type="datetime" />
+          <Property Name="image1" Type="image" />
+          <Property Name="image2" Type="image" />
+          <Property Name="image3" Type="image" />
+          <Property Name="image4" Type="image" />
+          <Property Name="image5" Type="image" />
+          <Property Name="latitude" Type="varchar" MaxLength="50" />
+          <Property Name="longitude" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="dimex002ModelStoreContainer">
+          <EntitySet Name="imss_preautorizacion" EntityType="Self.imss_preautorizacion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sucursales" EntityType="Self.sucursales" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dimex002Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="imss_preautorizacion">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="created" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="Int32" />
+          <Property Name="modified" Type="DateTime" Precision="3" />
+          <Property Name="modified_by" Type="Int32" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="txt1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt2" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt3" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt4" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt5" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt6" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt7" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt8" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt9" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt10" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt11" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt12" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt13" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt14" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt15" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt16" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt17" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt18" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt19" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt20" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt21" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt22" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt23" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt24" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt25" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt26" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt27" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt28" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt29" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt30" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="date1" Type="DateTime" Precision="3" />
+          <Property Name="date2" Type="DateTime" Precision="3" />
+          <Property Name="date3" Type="DateTime" Precision="3" />
+          <Property Name="date4" Type="DateTime" Precision="3" />
+          <Property Name="date5" Type="DateTime" Precision="3" />
+          <Property Name="latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="dimex002Entity" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="imss_preautorizacion" EntityType="Self.imss_preautorizacion" />
+          <EntitySet Name="sucursales" EntityType="dimex002Model.sucursales" />
+        </EntityContainer>
+        <EntityType Name="sucursales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="created" Type="DateTime" Precision="3" />
+          <Property Name="created_by" Type="Int32" />
+          <Property Name="modified" Type="DateTime" Precision="3" />
+          <Property Name="modified_by" Type="Int32" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="txt1" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt2" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt3" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt4" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt5" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt6" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt7" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt8" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt9" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt10" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt11" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt12" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt13" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt14" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt15" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt16" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt17" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt18" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt19" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt20" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt21" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt22" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt23" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt24" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt25" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt26" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt27" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt28" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt29" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt30" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt31" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt32" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt33" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt34" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt35" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt36" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt37" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt38" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt39" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt40" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt41" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt42" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt43" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt44" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt45" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt46" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt47" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt48" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt49" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="txt50" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="date1" Type="DateTime" Precision="3" />
+          <Property Name="date2" Type="DateTime" Precision="3" />
+          <Property Name="date3" Type="DateTime" Precision="3" />
+          <Property Name="date4" Type="DateTime" Precision="3" />
+          <Property Name="date5" Type="DateTime" Precision="3" />
+          <Property Name="image1" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="image2" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="image3" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="image4" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="image5" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dimex002ModelStoreContainer" CdmEntityContainer="dimex002Entity">
+          <EntitySetMapping Name="imss_preautorizacion">
+            <EntityTypeMapping TypeName="dimex002Model.imss_preautorizacion">
+              <MappingFragment StoreEntitySet="imss_preautorizacion">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="modified" ColumnName="modified" />
+                <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="txt1" ColumnName="txt1" />
+                <ScalarProperty Name="txt2" ColumnName="txt2" />
+                <ScalarProperty Name="txt3" ColumnName="txt3" />
+                <ScalarProperty Name="txt4" ColumnName="txt4" />
+                <ScalarProperty Name="txt5" ColumnName="txt5" />
+                <ScalarProperty Name="txt6" ColumnName="txt6" />
+                <ScalarProperty Name="txt7" ColumnName="txt7" />
+                <ScalarProperty Name="txt8" ColumnName="txt8" />
+                <ScalarProperty Name="txt9" ColumnName="txt9" />
+                <ScalarProperty Name="txt10" ColumnName="txt10" />
+                <ScalarProperty Name="txt11" ColumnName="txt11" />
+                <ScalarProperty Name="txt12" ColumnName="txt12" />
+                <ScalarProperty Name="txt13" ColumnName="txt13" />
+                <ScalarProperty Name="txt14" ColumnName="txt14" />
+                <ScalarProperty Name="txt15" ColumnName="txt15" />
+                <ScalarProperty Name="txt16" ColumnName="txt16" />
+                <ScalarProperty Name="txt17" ColumnName="txt17" />
+                <ScalarProperty Name="txt18" ColumnName="txt18" />
+                <ScalarProperty Name="txt19" ColumnName="txt19" />
+                <ScalarProperty Name="txt20" ColumnName="txt20" />
+                <ScalarProperty Name="txt21" ColumnName="txt21" />
+                <ScalarProperty Name="txt22" ColumnName="txt22" />
+                <ScalarProperty Name="txt23" ColumnName="txt23" />
+                <ScalarProperty Name="txt24" ColumnName="txt24" />
+                <ScalarProperty Name="txt25" ColumnName="txt25" />
+                <ScalarProperty Name="txt26" ColumnName="txt26" />
+                <ScalarProperty Name="txt27" ColumnName="txt27" />
+                <ScalarProperty Name="txt28" ColumnName="txt28" />
+                <ScalarProperty Name="txt29" ColumnName="txt29" />
+                <ScalarProperty Name="txt30" ColumnName="txt30" />
+                <ScalarProperty Name="date1" ColumnName="date1" />
+                <ScalarProperty Name="date2" ColumnName="date2" />
+                <ScalarProperty Name="date3" ColumnName="date3" />
+                <ScalarProperty Name="date4" ColumnName="date4" />
+                <ScalarProperty Name="date5" ColumnName="date5" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sucursales">
+            <EntityTypeMapping TypeName="dimex002Model.sucursales">
+              <MappingFragment StoreEntitySet="sucursales">
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="image5" ColumnName="image5" />
+                <ScalarProperty Name="image4" ColumnName="image4" />
+                <ScalarProperty Name="image3" ColumnName="image3" />
+                <ScalarProperty Name="image2" ColumnName="image2" />
+                <ScalarProperty Name="image1" ColumnName="image1" />
+                <ScalarProperty Name="date5" ColumnName="date5" />
+                <ScalarProperty Name="date4" ColumnName="date4" />
+                <ScalarProperty Name="date3" ColumnName="date3" />
+                <ScalarProperty Name="date2" ColumnName="date2" />
+                <ScalarProperty Name="date1" ColumnName="date1" />
+                <ScalarProperty Name="txt50" ColumnName="txt50" />
+                <ScalarProperty Name="txt49" ColumnName="txt49" />
+                <ScalarProperty Name="txt48" ColumnName="txt48" />
+                <ScalarProperty Name="txt47" ColumnName="txt47" />
+                <ScalarProperty Name="txt46" ColumnName="txt46" />
+                <ScalarProperty Name="txt45" ColumnName="txt45" />
+                <ScalarProperty Name="txt44" ColumnName="txt44" />
+                <ScalarProperty Name="txt43" ColumnName="txt43" />
+                <ScalarProperty Name="txt42" ColumnName="txt42" />
+                <ScalarProperty Name="txt41" ColumnName="txt41" />
+                <ScalarProperty Name="txt40" ColumnName="txt40" />
+                <ScalarProperty Name="txt39" ColumnName="txt39" />
+                <ScalarProperty Name="txt38" ColumnName="txt38" />
+                <ScalarProperty Name="txt37" ColumnName="txt37" />
+                <ScalarProperty Name="txt36" ColumnName="txt36" />
+                <ScalarProperty Name="txt35" ColumnName="txt35" />
+                <ScalarProperty Name="txt34" ColumnName="txt34" />
+                <ScalarProperty Name="txt33" ColumnName="txt33" />
+                <ScalarProperty Name="txt32" ColumnName="txt32" />
+                <ScalarProperty Name="txt31" ColumnName="txt31" />
+                <ScalarProperty Name="txt30" ColumnName="txt30" />
+                <ScalarProperty Name="txt29" ColumnName="txt29" />
+                <ScalarProperty Name="txt28" ColumnName="txt28" />
+                <ScalarProperty Name="txt27" ColumnName="txt27" />
+                <ScalarProperty Name="txt26" ColumnName="txt26" />
+                <ScalarProperty Name="txt25" ColumnName="txt25" />
+                <ScalarProperty Name="txt24" ColumnName="txt24" />
+                <ScalarProperty Name="txt23" ColumnName="txt23" />
+                <ScalarProperty Name="txt22" ColumnName="txt22" />
+                <ScalarProperty Name="txt21" ColumnName="txt21" />
+                <ScalarProperty Name="txt20" ColumnName="txt20" />
+                <ScalarProperty Name="txt19" ColumnName="txt19" />
+                <ScalarProperty Name="txt18" ColumnName="txt18" />
+                <ScalarProperty Name="txt17" ColumnName="txt17" />
+                <ScalarProperty Name="txt16" ColumnName="txt16" />
+                <ScalarProperty Name="txt15" ColumnName="txt15" />
+                <ScalarProperty Name="txt14" ColumnName="txt14" />
+                <ScalarProperty Name="txt13" ColumnName="txt13" />
+                <ScalarProperty Name="txt12" ColumnName="txt12" />
+                <ScalarProperty Name="txt11" ColumnName="txt11" />
+                <ScalarProperty Name="txt10" ColumnName="txt10" />
+                <ScalarProperty Name="txt9" ColumnName="txt9" />
+                <ScalarProperty Name="txt8" ColumnName="txt8" />
+                <ScalarProperty Name="txt7" ColumnName="txt7" />
+                <ScalarProperty Name="txt6" ColumnName="txt6" />
+                <ScalarProperty Name="txt5" ColumnName="txt5" />
+                <ScalarProperty Name="txt4" ColumnName="txt4" />
+                <ScalarProperty Name="txt3" ColumnName="txt3" />
+                <ScalarProperty Name="txt2" ColumnName="txt2" />
+                <ScalarProperty Name="txt1" ColumnName="txt1" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+                <ScalarProperty Name="modified" ColumnName="modified" />
+                <ScalarProperty Name="created_by" ColumnName="created_by" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

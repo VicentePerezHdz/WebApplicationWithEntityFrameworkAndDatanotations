@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PRUEBAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="Idcliente" />
+    </Key>
+    <Property Name="Idcliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="baja" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleOrdenPedidoes" Relationship="Self.FK__DetalleOr__IdCli__1BFD2C07" FromRole="cliente" ToRole="DetalleOrdenPedido" />
+    <Property Name="CEDULA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DetalleOrdenPedido">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="IdCliente" Type="Int32" />
+    <Property Name="RequiredDate" Type="DateTime" Precision="0" />
+    <Property Name="Shipped" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="cliente" Relationship="Self.FK__DetalleOr__IdCli__1BFD2C07" FromRole="DetalleOrdenPedido" ToRole="cliente" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__DetalleOr__Produ__1B0907CE" FromRole="DetalleOrdenPedido" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreProduco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Precio" Type="Double" />
+    <NavigationProperty Name="DetalleOrdenPedidoes" Relationship="Self.FK__DetalleOr__Produ__1B0907CE" FromRole="Producto" ToRole="DetalleOrdenPedido" />
+    <Property Name="Codigo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__DetalleOr__IdCli__1BFD2C07">
+    <End Role="cliente" Type="Self.cliente" Multiplicity="0..1" />
+    <End Role="DetalleOrdenPedido" Type="Self.DetalleOrdenPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="Idcliente" />
+      </Principal>
+      <Dependent Role="DetalleOrdenPedido">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleOr__Produ__1B0907CE">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="DetalleOrdenPedido" Type="Self.DetalleOrdenPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="DetalleOrdenPedido">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PRUEBAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clientes" EntityType="Self.cliente" />
+    <EntitySet Name="DetalleOrdenPedidoes" EntityType="Self.DetalleOrdenPedido" />
+    <EntitySet Name="Productoes" EntityType="Self.Producto" />
+    <AssociationSet Name="FK__DetalleOr__IdCli__1BFD2C07" Association="Self.FK__DetalleOr__IdCli__1BFD2C07">
+      <End Role="cliente" EntitySet="clientes" />
+      <End Role="DetalleOrdenPedido" EntitySet="DetalleOrdenPedidoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleOr__Produ__1B0907CE" Association="Self.FK__DetalleOr__Produ__1B0907CE">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="DetalleOrdenPedido" EntitySet="DetalleOrdenPedidoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

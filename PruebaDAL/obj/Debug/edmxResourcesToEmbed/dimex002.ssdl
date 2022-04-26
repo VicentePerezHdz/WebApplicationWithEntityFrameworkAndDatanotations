@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dimex002Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="imss_preautorizacion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="created" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="txt1" Type="varchar" MaxLength="300" />
+    <Property Name="txt2" Type="varchar" MaxLength="300" />
+    <Property Name="txt3" Type="varchar" MaxLength="300" />
+    <Property Name="txt4" Type="varchar" MaxLength="300" />
+    <Property Name="txt5" Type="varchar" MaxLength="300" />
+    <Property Name="txt6" Type="varchar" MaxLength="300" />
+    <Property Name="txt7" Type="varchar" MaxLength="300" />
+    <Property Name="txt8" Type="varchar" MaxLength="300" />
+    <Property Name="txt9" Type="varchar" MaxLength="300" />
+    <Property Name="txt10" Type="varchar" MaxLength="300" />
+    <Property Name="txt11" Type="varchar" MaxLength="300" />
+    <Property Name="txt12" Type="varchar" MaxLength="300" />
+    <Property Name="txt13" Type="varchar" MaxLength="300" />
+    <Property Name="txt14" Type="varchar" MaxLength="300" />
+    <Property Name="txt15" Type="varchar" MaxLength="300" />
+    <Property Name="txt16" Type="varchar" MaxLength="300" />
+    <Property Name="txt17" Type="varchar" MaxLength="300" />
+    <Property Name="txt18" Type="varchar" MaxLength="300" />
+    <Property Name="txt19" Type="varchar" MaxLength="300" />
+    <Property Name="txt20" Type="varchar" MaxLength="300" />
+    <Property Name="txt21" Type="varchar" MaxLength="300" />
+    <Property Name="txt22" Type="varchar" MaxLength="300" />
+    <Property Name="txt23" Type="varchar" MaxLength="300" />
+    <Property Name="txt24" Type="varchar" MaxLength="300" />
+    <Property Name="txt25" Type="varchar" MaxLength="300" />
+    <Property Name="txt26" Type="varchar" MaxLength="300" />
+    <Property Name="txt27" Type="varchar" MaxLength="300" />
+    <Property Name="txt28" Type="varchar" MaxLength="300" />
+    <Property Name="txt29" Type="varchar" MaxLength="300" />
+    <Property Name="txt30" Type="varchar" MaxLength="300" />
+    <Property Name="date1" Type="datetime" />
+    <Property Name="date2" Type="datetime" />
+    <Property Name="date3" Type="datetime" />
+    <Property Name="date4" Type="datetime" />
+    <Property Name="date5" Type="datetime" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sucursales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="created" Type="datetime" />
+    <Property Name="created_by" Type="int" />
+    <Property Name="modified" Type="datetime" />
+    <Property Name="modified_by" Type="int" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="txt1" Type="varchar" MaxLength="300" />
+    <Property Name="txt2" Type="varchar" MaxLength="300" />
+    <Property Name="txt3" Type="varchar" MaxLength="300" />
+    <Property Name="txt4" Type="varchar" MaxLength="300" />
+    <Property Name="txt5" Type="varchar" MaxLength="300" />
+    <Property Name="txt6" Type="varchar" MaxLength="300" />
+    <Property Name="txt7" Type="varchar" MaxLength="300" />
+    <Property Name="txt8" Type="varchar" MaxLength="300" />
+    <Property Name="txt9" Type="varchar" MaxLength="300" />
+    <Property Name="txt10" Type="varchar" MaxLength="300" />
+    <Property Name="txt11" Type="varchar" MaxLength="300" />
+    <Property Name="txt12" Type="varchar" MaxLength="300" />
+    <Property Name="txt13" Type="varchar" MaxLength="300" />
+    <Property Name="txt14" Type="varchar" MaxLength="300" />
+    <Property Name="txt15" Type="varchar" MaxLength="300" />
+    <Property Name="txt16" Type="varchar" MaxLength="300" />
+    <Property Name="txt17" Type="varchar" MaxLength="300" />
+    <Property Name="txt18" Type="varchar" MaxLength="300" />
+    <Property Name="txt19" Type="varchar" MaxLength="300" />
+    <Property Name="txt20" Type="varchar" MaxLength="300" />
+    <Property Name="txt21" Type="varchar" MaxLength="300" />
+    <Property Name="txt22" Type="varchar" MaxLength="300" />
+    <Property Name="txt23" Type="varchar" MaxLength="300" />
+    <Property Name="txt24" Type="varchar" MaxLength="300" />
+    <Property Name="txt25" Type="varchar" MaxLength="300" />
+    <Property Name="txt26" Type="varchar" MaxLength="300" />
+    <Property Name="txt27" Type="varchar" MaxLength="300" />
+    <Property Name="txt28" Type="varchar" MaxLength="300" />
+    <Property Name="txt29" Type="varchar" MaxLength="300" />
+    <Property Name="txt30" Type="varchar" MaxLength="300" />
+    <Property Name="txt31" Type="varchar" MaxLength="300" />
+    <Property Name="txt32" Type="varchar" MaxLength="300" />
+    <Property Name="txt33" Type="varchar" MaxLength="300" />
+    <Property Name="txt34" Type="varchar" MaxLength="300" />
+    <Property Name="txt35" Type="varchar" MaxLength="300" />
+    <Property Name="txt36" Type="varchar" MaxLength="300" />
+    <Property Name="txt37" Type="varchar" MaxLength="300" />
+    <Property Name="txt38" Type="varchar" MaxLength="300" />
+    <Property Name="txt39" Type="varchar" MaxLength="300" />
+    <Property Name="txt40" Type="varchar" MaxLength="300" />
+    <Property Name="txt41" Type="varchar" MaxLength="300" />
+    <Property Name="txt42" Type="varchar" MaxLength="300" />
+    <Property Name="txt43" Type="varchar" MaxLength="300" />
+    <Property Name="txt44" Type="varchar" MaxLength="300" />
+    <Property Name="txt45" Type="varchar" MaxLength="300" />
+    <Property Name="txt46" Type="varchar" MaxLength="300" />
+    <Property Name="txt47" Type="varchar" MaxLength="300" />
+    <Property Name="txt48" Type="varchar" MaxLength="300" />
+    <Property Name="txt49" Type="varchar" MaxLength="300" />
+    <Property Name="txt50" Type="varchar" MaxLength="300" />
+    <Property Name="date1" Type="datetime" />
+    <Property Name="date2" Type="datetime" />
+    <Property Name="date3" Type="datetime" />
+    <Property Name="date4" Type="datetime" />
+    <Property Name="date5" Type="datetime" />
+    <Property Name="image1" Type="image" />
+    <Property Name="image2" Type="image" />
+    <Property Name="image3" Type="image" />
+    <Property Name="image4" Type="image" />
+    <Property Name="image5" Type="image" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="dimex002ModelStoreContainer">
+    <EntitySet Name="imss_preautorizacion" EntityType="Self.imss_preautorizacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sucursales" EntityType="Self.sucursales" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

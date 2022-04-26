@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1800
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDatanotations", "WebApplicationDatanotations.csproj", "{C12818A3-E494-42E9-9CCA-7B82DFF9D0C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Acceso A Datos", "Acceso A Datos", "{6E4E681B-B081-4EF0-AF29-53F029C722C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimex002DAL", "PruebaDAL\Dimex002DAL.csproj", "{86CAE2B5-624D-44E8-937F-F1C2950B07AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C12818A3-E494-42E9-9CCA-7B82DFF9D0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12818A3-E494-42E9-9CCA-7B82DFF9D0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12818A3-E494-42E9-9CCA-7B82DFF9D0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12818A3-E494-42E9-9CCA-7B82DFF9D0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CAE2B5-624D-44E8-937F-F1C2950B07AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CAE2B5-624D-44E8-937F-F1C2950B07AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CAE2B5-624D-44E8-937F-F1C2950B07AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CAE2B5-624D-44E8-937F-F1C2950B07AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86CAE2B5-624D-44E8-937F-F1C2950B07AE} = {6E4E681B-B081-4EF0-AF29-53F029C722C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EC73694-3C64-4B31-BE6F-78B228010919}
+	EndGlobalSection
+EndGlobal

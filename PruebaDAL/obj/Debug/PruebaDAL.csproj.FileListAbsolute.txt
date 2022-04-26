@@ -1,0 +1,24 @@
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\PruebaDAL.dll.config
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\PruebaDAL.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\PruebaDAL.pdb
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\EntityFramework.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\EntityFramework.xml
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\obj\Debug\PruebaDAL.csprojResolveAssemblyReference.cache
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\obj\Debug\PruebaDAL.dll
+C:\Users\Vincent Law\documents\visual studio 2015\Projects\Prueba\PruebaDAL\obj\Debug\PruebaDAL.pdb
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\PruebaDAL.dll.config
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\PruebaDAL.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\PruebaDAL.pdb
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\EntityFramework.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\EntityFramework.xml
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\obj\Debug\PruebaDAL.csprojResolveAssemblyReference.cache
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\obj\Debug\PruebaDAL.dll
+C:\Users\Vincent Law\Documents\Visual Studio 2015\Projects\Prueba Sr Carlos\Prueba\PruebaDAL\obj\Debug\PruebaDAL.pdb

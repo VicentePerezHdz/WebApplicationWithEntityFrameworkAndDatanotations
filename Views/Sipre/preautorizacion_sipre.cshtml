@@ -1,0 +1,484 @@
+﻿@model WebApplication1.Models.FormsModel
+
+
+<style type="text/css">
+    .video-preview,
+    .image-preview {
+        display: block;
+        max-height: 150px;
+        margin: 0 auto;
+    }
+
+    ul.archivos {
+        margin-top: 40px;
+        list-style: none;
+        padding: 0px;
+    }
+
+        ul.archivos li.titulo {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #cecece;
+            color: #737373;
+        }
+
+        ul.archivos li.archivo {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+            ul.archivos li.archivo a:before {
+                display: block;
+                content: "\f15b";
+                font-size: 30px !important;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 15px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            ul.archivos li.archivo a {
+                display: block;
+                font-size: 12px;
+                font-weight: bold;
+                color: #737373;
+                background-color: #d8d8d8;
+                border-radius: 5px;
+                padding: 5px 10px;
+                vertical-align: middle;
+            }
+
+                ul.archivos li.archivo a i {
+                    font-size: 15px;
+                    margin-right: 5px;
+                }
+
+                ul.archivos li.archivo a:hover {
+                    text-decoration: none;
+                    background-color: #dcdada;
+                    color: #555555;
+                }
+
+    .form-control, .single-line {
+        border: 1px solid #bdbbbb;
+        border-radius: 5px;
+    }
+
+    .ui-helper-hidden-accessible,
+    .ui-tooltip {
+        display: none;
+    }
+</style>
+<style type="text/css">
+    .video-preview,
+    .image-preview {
+        display: block;
+        max-height: 150px;
+        margin: 0 auto;
+    }
+
+    ul.archivos {
+        margin-top: 40px;
+        list-style: none;
+        padding: 0px;
+    }
+
+        ul.archivos li.titulo {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #cecece;
+            color: #737373;
+        }
+
+        ul.archivos li.archivo {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+            ul.archivos li.archivo a:before {
+                display: block;
+                content: "\f15b";
+                font-size: 30px !important;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 15px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            ul.archivos li.archivo a {
+                display: block;
+                font-size: 12px;
+                font-weight: bold;
+                color: #737373;
+                background-color: #d8d8d8;
+                border-radius: 5px;
+                padding: 5px 10px;
+                vertical-align: middle;
+            }
+
+                ul.archivos li.archivo a i {
+                    font-size: 15px;
+                    margin-right: 5px;
+                }
+
+                ul.archivos li.archivo a:hover {
+                    text-decoration: none;
+                    background-color: #dcdada;
+                    color: #555555;
+                }
+
+    .form-control, .single-line {
+        border: 1px solid #bdbbbb;
+        border-radius: 5px;
+    }
+
+    .ui-helper-hidden-accessible,
+    .ui-tooltip {
+        display: none;
+    }
+</style>
+
+
+@using (Html.BeginForm("preautorizacion_sipre", "Sipre", FormMethod.Post, new { @id = "registerFormId", @class = "form-horizontal", role = "form" }))
+
+{
+    @Html.AntiForgeryToken()
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+
+
+    <hr />
+
+    <div class="form-group">
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-md-10">
+
+            <h3>INE y Carta de Instrucción (Obligatorios), Talón de pago (Anexar en caso de tenerlo)</h3>
+            @Html.TextBoxFor(m => m.PostedFile, new { type = "file" })
+            <br />
+            @Html.ValidationMessageFor(m => m.PostedFile, "", new { @class = "text-danger" })
+
+            @Html.TextBoxFor(m => m.PostedFile2, new { type = "file" })
+            <br />
+            @Html.ValidationMessageFor(m => m.PostedFile2, "", new { @class = "text-danger" })
+            <br />
+            <br />
+            <input type="file" id="archivo3" name="archivo3">
+
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.strSucursal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @*Con el siguiente objeto  IEnumerable<SelectListItem> Mostraos el Combo hacia la vista*@
+            @Html.DropDownList("Sucursal", (IEnumerable<SelectListItem>)ViewBag.Mensaje)
+
+            @Html.ValidationMessageFor(model => model.strSucursal, "", new { @class = "text-danger" })
+            @* }*@
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Solicitud, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-md-10">
+
+            <h3>Tipo de crédito</h3>
+
+
+            @Html.DropDownListFor(m => m.strTipoCredito, new List<SelectListItem>
+            { new SelectListItem{Text="nuevo", Value="nuevo"},
+            new SelectListItem{Text="subsecuente", Value="subsecuente"},
+            new SelectListItem{Text="renovacion", Value="renovacion"}}, "Elige...")
+
+            @Html.ValidationMessageFor(model => model.strTipoCredito, "", new { @class = "text-danger" })
+
+
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="row" id="renovacion_box" style="display: none;">
+            @Html.LabelFor(model => model.cuenta, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.cuenta, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.cuenta, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.apaterno, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.apaterno, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.apaterno, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.amaterno, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.amaterno, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.amaterno, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.curp, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.curp, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.curp, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.clabe, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.clabe, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.clabe, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.numsegurosocial, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.numsegurosocial, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.numsegurosocial, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.capitalsolicitado, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.capitalsolicitado, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.capitalsolicitado, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-10">
+
+            <h3>Plazo</h3>
+            @*<select id="plazo" name="plazo" class="form-control select2">
+                    <option value="0" selected="" disabled="">Elige...</option>
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                    <option value="60">60</option>
+                </select>*@
+
+            @Html.DropDownListFor(m => m.strPlazo, new List<SelectListItem>
+            { new SelectListItem{Text="12", Value="12"},
+            new SelectListItem{Text="24", Value="24"},
+            new SelectListItem{Text="36", Value="36"},
+            new SelectListItem { Text = "48", Value = "48" },
+            new SelectListItem { Text = "60", Value = "60" }},
+            "Elige...")
+
+
+            @Html.ValidationMessageFor(model => model.strPlazo, "", new { @class = "text-danger" })
+
+        </div>
+        <div class="col-md-10">
+            <div class="form-group">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="form-group">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-10">
+
+
+            <h3>Tasa</h3>
+            @*<select name="tasa" class="form-control select2">
+                    <option value="0" selected="" disabled="">Elige...</option>
+                    <option value="34.90">34.90%</option>
+                    <option value="36.71">36.71%</option>
+                    <option value="36.90">36.90%</option>
+                    <option value="38.90">38.90%</option>
+                    <option value="39.12">39.12%</option>
+                    <option value="41.00">41.00%</option>
+                    <option value="41.10">41.10%</option>
+                </select>*@
+            @Html.DropDownListFor(m => m.strTasa, new List<SelectListItem>
+            { new SelectListItem{Text="34.90", Value="34.90"},
+            new SelectListItem{Text="36.71", Value="36.71"},
+            new SelectListItem{Text="36.90", Value="36.90"},
+            new SelectListItem { Text = "38.90", Value = "38.90" },
+            new SelectListItem { Text = "39.12", Value = "39.12" },
+            new SelectListItem{Text="41.00", Value="41.00"},
+            new SelectListItem { Text = "41.10", Value = "41.10" },},
+            "Elige...")
+            @Html.ValidationMessageFor(model => model.strTasa, "", new { @class = "text-danger" })
+
+        </div>
+        <div class="col-md-10">
+            <div class="form-group">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-10">
+
+            <h3>CAT</h3>
+            @*<select name="cat" class="form-control select2">
+                    <option value="0" selected="" disabled="">Elige...</option>
+
+                    <option value="41.06">41.06%</option>
+                    <option value="43.56">43.56%</option>
+                    <option value="43.83">43.83%</option>
+                    <option value="46.64">46.64%</option>
+                    <option value="46.96">46.96%</option>
+                    <option value="49.65">49.65%</option>
+                    <option value="49.80">49.80%</option>
+                </select>*@
+            @Html.DropDownListFor(m => m.strCat, new List<SelectListItem>
+            { new SelectListItem{Text="41.06", Value="41.06"},
+            new SelectListItem{Text="43.56", Value="43.56"},
+            new SelectListItem{Text="43.83", Value="43.83"},
+            new SelectListItem { Text = "46.640", Value = "46.64" },
+            new SelectListItem { Text = "46.96", Value = "46.96" },
+            new SelectListItem{Text="49.65", Value="49.65"},
+            new SelectListItem { Text = "49.80", Value = "49.80" },},
+            "Elige...")
+            @Html.ValidationMessageFor(model => model.strCat, "", new { @class = "text-danger" })
+
+        </div>
+        <div class="col-md-10">
+            <div class="form-group">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.valorpago, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.valorpago, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.valorpago, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.montototalpagar, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.montototalpagar, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.montototalpagar, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-10">
+
+            <h3>Grupo</h3>
+            @*<select name="grupo" class="form-control select2">
+                    <option value="0" selected="" disabled="">Elige...</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                </select>*@
+
+            @Html.DropDownListFor(m => m.strGrupo, new List<SelectListItem>
+            { new SelectListItem{Text="01", Value="01"},
+            new SelectListItem{Text="43.56", Value="43.56"},
+            new SelectListItem{Text="02", Value="02"},
+            new SelectListItem { Text = "03", Value = "03" }},
+            "Elige...")
+            @Html.ValidationMessageFor(model => model.strGrupo, "", new { @class = "text-danger" })
+
+        </div>
+        <div class="col-md-10">
+            <div class="form-group">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" class="btn btn-sm btn-success" value="Enviar Datos" />
+    </div>
+
+}
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @*    @Scripts.Render("~/bundles/preautorizacion_sipre")*@
+
+    @Scripts.Render("~/bundles/custom-validator")
+
+}
+
+<script src="~/Scripts/jquery-3.5.1.js"></script>
+<script src="~/Scripts/jquery-3.5.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#strTipoCredito").change(function () {
+            var Select = $("#strTipoCredito").val();
+            if ($("#strTipoCredito").val() == "renovacion") {
+                $("#renovacion_box").show(1000);
+            } else {
+                $("#renovacion_box").hide(1000);
+            }
+
+        })
+
+    })
+
+</script>

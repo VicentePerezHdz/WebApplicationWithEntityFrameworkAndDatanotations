@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dimex002ModelStoreContainer" CdmEntityContainer="dimex002Entity">
+    <EntitySetMapping Name="imss_preautorizacion">
+      <EntityTypeMapping TypeName="dimex002Model.imss_preautorizacion">
+        <MappingFragment StoreEntitySet="imss_preautorizacion">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="txt1" ColumnName="txt1" />
+          <ScalarProperty Name="txt2" ColumnName="txt2" />
+          <ScalarProperty Name="txt3" ColumnName="txt3" />
+          <ScalarProperty Name="txt4" ColumnName="txt4" />
+          <ScalarProperty Name="txt5" ColumnName="txt5" />
+          <ScalarProperty Name="txt6" ColumnName="txt6" />
+          <ScalarProperty Name="txt7" ColumnName="txt7" />
+          <ScalarProperty Name="txt8" ColumnName="txt8" />
+          <ScalarProperty Name="txt9" ColumnName="txt9" />
+          <ScalarProperty Name="txt10" ColumnName="txt10" />
+          <ScalarProperty Name="txt11" ColumnName="txt11" />
+          <ScalarProperty Name="txt12" ColumnName="txt12" />
+          <ScalarProperty Name="txt13" ColumnName="txt13" />
+          <ScalarProperty Name="txt14" ColumnName="txt14" />
+          <ScalarProperty Name="txt15" ColumnName="txt15" />
+          <ScalarProperty Name="txt16" ColumnName="txt16" />
+          <ScalarProperty Name="txt17" ColumnName="txt17" />
+          <ScalarProperty Name="txt18" ColumnName="txt18" />
+          <ScalarProperty Name="txt19" ColumnName="txt19" />
+          <ScalarProperty Name="txt20" ColumnName="txt20" />
+          <ScalarProperty Name="txt21" ColumnName="txt21" />
+          <ScalarProperty Name="txt22" ColumnName="txt22" />
+          <ScalarProperty Name="txt23" ColumnName="txt23" />
+          <ScalarProperty Name="txt24" ColumnName="txt24" />
+          <ScalarProperty Name="txt25" ColumnName="txt25" />
+          <ScalarProperty Name="txt26" ColumnName="txt26" />
+          <ScalarProperty Name="txt27" ColumnName="txt27" />
+          <ScalarProperty Name="txt28" ColumnName="txt28" />
+          <ScalarProperty Name="txt29" ColumnName="txt29" />
+          <ScalarProperty Name="txt30" ColumnName="txt30" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="date4" ColumnName="date4" />
+          <ScalarProperty Name="date5" ColumnName="date5" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sucursales">
+      <EntityTypeMapping TypeName="dimex002Model.sucursales">
+        <MappingFragment StoreEntitySet="sucursales">
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="image5" ColumnName="image5" />
+          <ScalarProperty Name="image4" ColumnName="image4" />
+          <ScalarProperty Name="image3" ColumnName="image3" />
+          <ScalarProperty Name="image2" ColumnName="image2" />
+          <ScalarProperty Name="image1" ColumnName="image1" />
+          <ScalarProperty Name="date5" ColumnName="date5" />
+          <ScalarProperty Name="date4" ColumnName="date4" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="txt50" ColumnName="txt50" />
+          <ScalarProperty Name="txt49" ColumnName="txt49" />
+          <ScalarProperty Name="txt48" ColumnName="txt48" />
+          <ScalarProperty Name="txt47" ColumnName="txt47" />
+          <ScalarProperty Name="txt46" ColumnName="txt46" />
+          <ScalarProperty Name="txt45" ColumnName="txt45" />
+          <ScalarProperty Name="txt44" ColumnName="txt44" />
+          <ScalarProperty Name="txt43" ColumnName="txt43" />
+          <ScalarProperty Name="txt42" ColumnName="txt42" />
+          <ScalarProperty Name="txt41" ColumnName="txt41" />
+          <ScalarProperty Name="txt40" ColumnName="txt40" />
+          <ScalarProperty Name="txt39" ColumnName="txt39" />
+          <ScalarProperty Name="txt38" ColumnName="txt38" />
+          <ScalarProperty Name="txt37" ColumnName="txt37" />
+          <ScalarProperty Name="txt36" ColumnName="txt36" />
+          <ScalarProperty Name="txt35" ColumnName="txt35" />
+          <ScalarProperty Name="txt34" ColumnName="txt34" />
+          <ScalarProperty Name="txt33" ColumnName="txt33" />
+          <ScalarProperty Name="txt32" ColumnName="txt32" />
+          <ScalarProperty Name="txt31" ColumnName="txt31" />
+          <ScalarProperty Name="txt30" ColumnName="txt30" />
+          <ScalarProperty Name="txt29" ColumnName="txt29" />
+          <ScalarProperty Name="txt28" ColumnName="txt28" />
+          <ScalarProperty Name="txt27" ColumnName="txt27" />
+          <ScalarProperty Name="txt26" ColumnName="txt26" />
+          <ScalarProperty Name="txt25" ColumnName="txt25" />
+          <ScalarProperty Name="txt24" ColumnName="txt24" />
+          <ScalarProperty Name="txt23" ColumnName="txt23" />
+          <ScalarProperty Name="txt22" ColumnName="txt22" />
+          <ScalarProperty Name="txt21" ColumnName="txt21" />
+          <ScalarProperty Name="txt20" ColumnName="txt20" />
+          <ScalarProperty Name="txt19" ColumnName="txt19" />
+          <ScalarProperty Name="txt18" ColumnName="txt18" />
+          <ScalarProperty Name="txt17" ColumnName="txt17" />
+          <ScalarProperty Name="txt16" ColumnName="txt16" />
+          <ScalarProperty Name="txt15" ColumnName="txt15" />
+          <ScalarProperty Name="txt14" ColumnName="txt14" />
+          <ScalarProperty Name="txt13" ColumnName="txt13" />
+          <ScalarProperty Name="txt12" ColumnName="txt12" />
+          <ScalarProperty Name="txt11" ColumnName="txt11" />
+          <ScalarProperty Name="txt10" ColumnName="txt10" />
+          <ScalarProperty Name="txt9" ColumnName="txt9" />
+          <ScalarProperty Name="txt8" ColumnName="txt8" />
+          <ScalarProperty Name="txt7" ColumnName="txt7" />
+          <ScalarProperty Name="txt6" ColumnName="txt6" />
+          <ScalarProperty Name="txt5" ColumnName="txt5" />
+          <ScalarProperty Name="txt4" ColumnName="txt4" />
+          <ScalarProperty Name="txt3" ColumnName="txt3" />
+          <ScalarProperty Name="txt2" ColumnName="txt2" />
+          <ScalarProperty Name="txt1" ColumnName="txt1" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
